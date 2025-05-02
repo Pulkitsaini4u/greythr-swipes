@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 30em;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      text-align: left;
+      max-width: 1em;
+    }
+    .swipe-type {
+      font-weight: bold;
+      color: #2a7ae2;
+    }
+    .actual-hours {
+      text-align: center;
+      font-style: italic;
+      padding: 0.5rem;
+      background-color: #f9f9f9;
+      border: none;
+    }
+    #userIdForm {
+        display: none;
+      }
+  </style>
+</head>
+<body>
+  <h3>Attendance Swipes</h3>
+  <div id="totalTimeDisplay" style="margin-bottom: 1em; font-weight: bold;"></div>
+  <div id="eightHourEstimate" style="margin-bottom: 0.5em; color: green; font-weight: bold;font-size: 3em;"></div>
+  <div id="userIdForm">
+    <label for="userIdInput">Enter User ID:</label>
+    <input type="text" id="userIdInput" />
+    <button id="submitUserId">Submit</button>
+  </div>
+
+  <table id="swipeTable">
+    <thead>
+      <tr>
+        <th>In/Out</th>
+        <th>Swipe Time</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody id="swipeData"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
